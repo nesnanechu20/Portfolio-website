@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fathimath Nasna KV | Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#1e3a8a;
+color:#fff;
+padding:20px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#2563eb,#60a5fa);
+color:white;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:25px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 28px;
+background:white;
+color:#2563eb;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ddd;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.title{
+font-size:32px;
+margin-bottom:25px;
+text-align:center;
+color:#1e3a8a;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#2563eb;
+color:white;
+padding:15px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+}
+
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+flex-direction:column;
+background:#1e3a8a;
+position:absolute;
+top:70px;
+right:0;
+width:220px;
+padding:20px;
+}
+
+nav ul.show{
+display:flex;
+}
+
+.menu{
+display:block;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero h2{
+font-size:20px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Nasna</div>
+
+<ul id="navLinks">
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="menu" onclick="toggleMenu()">☰</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Fathimath Nasna KV</h1>
+
+<h2>B.Com Finance Graduate</h2>
+
+<p>
+Detail-oriented Finance graduate passionate about Accounting,
+Finance and continuous learning.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+
+I am a motivated B.Com Finance graduate with basic knowledge of
+Accounting, MS Excel, MS Word and Tally. I enjoy learning new
+skills and aim to build a successful career in Accounting and
+Finance.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+
+<h3>Bachelor of Commerce (Finance)</h3>
+
+<p>Jamia Hamdard University</p>
+
+</div>
+
+<div class="card">
+
+<h3>Higher Secondary Education</h3>
+
+<p>Valapattanam Govt. School</p>
+
+<p>Score : 90%</p>
+
+</div>
+
+<div class="card">
+
+<h3>Secondary School Education</h3>
+
+<p>Valapattanam Higher Secondary School</p>
+
+<p>Score : 85%</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Accounting</div>
+
+<div class="skill">MS Excel</div>
+
+<div class="skill">MS Word</div>
+
+<div class="skill">Tally</div>
+
+<div class="skill">Communication</div>
+
+<div class="skill">Quick Learner</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="card">
+
+<h3>Academic Finance Project</h3>
+
+<p>
+
+Completed finance and accounting related academic projects during
+B.Com.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card contact">
+
+<p><strong>Name:</strong> Fathimath Nasna KV</p>
+
+<p><strong>Phone:</strong> +91 9207214171</p>
+
+<p><strong>Email:</strong> nesnanechu20@gmail.com</p>
+
+<p><strong>Location:</strong> Kannur, Kerala</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Fathimath Nasna KV | Portfolio</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("navLinks").classList.toggle("show");
+
+}
+
+</script>
+
+</body>
+</html>
